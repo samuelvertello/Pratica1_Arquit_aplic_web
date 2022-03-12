@@ -14,18 +14,22 @@
           <table class="table table-dark">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nome</th>
-                <th scope="col">Email</th>
+                <th scope="col">COMPE</th>
+                <th scope="col">ShortName</th>
+                <th scope="col">Document</th>
+                <th scope="col">Type</th>
+                <th scope="col">Url</th>
               </tr>
             </thead>
             <tbody>
-          <% if (login.length > 0) { %>
-              <% for(var i = 0; i < login.length; i++) {%> 
+          <% if (lista.length > 0) { %>
+              <% for(var i = 0; i < lista.length; i++) {%> 
                 </tr>
-                  <th scope="row"><%= login[i].id %></th>
-                  <td><h4 ><%= login[i].nome %></h4></td>
-                  <td><%= login[i].email %></td>
+                  <th scope="row"><%= lista[i].COMPE %></th>
+                  <td><%= lista[i].ShortName %></td>
+                  <td><%= lista[i].Document %></td>
+                  <td><%= lista[i].Type %</td>
+                  <td><%= lista[i].Url %</td>
                 </tr>
               <% } %>
             
